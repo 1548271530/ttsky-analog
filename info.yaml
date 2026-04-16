@@ -16,7 +16,7 @@ project:
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "inverter"
+  top_module:  "tt_um_inverter"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
@@ -26,7 +26,7 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "in"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -36,7 +36,7 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
+  uo[0]: "out"
   uo[1]: ""
   uo[2]: ""
   uo[3]: ""
@@ -56,8 +56,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
+  ua[0]: "vdd"
+  ua[1]: "gnd"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""
